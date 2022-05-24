@@ -43,7 +43,8 @@ def save():
     data_entry = date + "," + product + "," + review + "," + sentiment
 
     # open the file in the 'append' mode
-
+ file_handler = open('./static/assets/datafiles/updated_product_dataset.csv' , 'a')
+    file_handler.write(data_entry + '\n')
     # Log the data in the file
 
     # return a success message
